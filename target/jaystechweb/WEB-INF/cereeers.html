@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jay's Technologies</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+<link rel="stylesheet" href="styles.css">
+
+<header>
+    <!--Main Header-->
+    <h1>Jay's Technologie's</h1>
+    <p> The Great Way Of Clearing Subjects </p>
+</header>
+<!--Main Navigator-->
+<nav>
+    <ul>
+        <li>
+            <a href="home.html" >  Home </a>
+        </li>
+        <li>
+            <a href="About.html">  About </a>
+        </li>
+        <li>
+            <a href="cereeers.html" class="active">  Careers </a>
+        </li>
+        <li>
+            <a href="corces.html">  Corces </a>
+        </li>
+        <li>
+            <a href="Contactus.html">  Contact Us </a>
+        </li>
+    </ul>
+</nav>
+
+
+          <!--Side Bar-->
+<aside>
+    <ul>
+        <li>
+            <a href="it.html"> Information Technology</a>
+        </li>
+        <li>
+            <a href="ece.html">ECE</a>
+        </li>
+        <li>
+            <a href="eee.html">EEE</a>
+        </li>
+        <li>
+            <a href="cse.html"> CSE </a>
+        </li>
+        <li>
+            <a href="min.html"> Mining </a>
+        </li>
+    </ul>
+</aside>
+<!--Main Area-->
+<h2>Time & Date</h2>
+
+<button type="button"
+onclick="document.getElementById('Time & Date').innerHTML = Date()">
+Time & Date.</button>
+
+<p id="Time & Date"></p>
+
+
+    <h2 align="center"> Comming Soon </h2>
+    <p>Click the button get your Location.</p>
+
+<button onclick="getLocation()">Try It</button>
+
+<p id="demo"></p>
+
+<script>
+const x = document.getElementById("demo");
+
+function getLocation() {
+  try {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } catch {
+    x.innerHTML = err;
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;
+}
+</script
+
+
+
+
+</section>
+<!--main footer-->
+<footer>
+    <h2>Copyright <sup>&copy;</sup> 2022 , Jay's Technologies</h2>
+    <p> All Rights Reserved <sup>&reg;</sup> </p>
+    <small> Devoloped And Maintained By Jayaprakash Goud</small>
+</footer>
+</body>
+</html>
